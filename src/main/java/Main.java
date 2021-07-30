@@ -12,7 +12,7 @@ public class Main {
 
         WebDriver driver = new ChromeDriver();
 
-        /*driver.get("https://demo.opencart.com/index.php?route=account/login");
+        driver.get("https://demo.opencart.com/index.php?route=account/login");
 
         WebElement emailElement = driver.findElement(By.name("email"));
         emailElement.sendKeys("Hola@test.com");
@@ -29,13 +29,7 @@ public class Main {
         Assert.assertTrue(alertMessage.isDisplayed());
 
         driver.close();
-        driver.quit();*/
-        driver.get("https://demo.opencart.com/");
-
-        driver.findElement(By.name("search")).sendKeys("macbook");
-        driver.findElement(By.xpath("//*[@id='search']/span/button")).click();
-
-        driver.findElement(By.xpath("//div[contains@class, '']"));
+        driver.quit();
 
     }
 }

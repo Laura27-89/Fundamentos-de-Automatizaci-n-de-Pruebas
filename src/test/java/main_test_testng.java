@@ -2,13 +2,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class main_test_testng {
-    @Test
+    @Test(groups = {"Imperio"})
     public void testConstructor(){
         Persona persona = new Persona("Totoro", "Makoi");
         Assert.assertEquals(persona.getFullName(), "Totoro Makoi");
     }
 
-    @Test
+    @Test(groups = "Republica")
     public void testChangeName(){
         Persona persona = new Persona("Totoro", "Makoi");
         persona.changeName("Kori");
